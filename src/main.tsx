@@ -1,8 +1,10 @@
 import React from "react";
-import SafeParkSite from "./SafeParkSite";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css"; // Tailwind CSS import
 
-function App() {
-  return <SafeParkSite />;
-}
-
-export default App;
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
