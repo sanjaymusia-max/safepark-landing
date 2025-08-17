@@ -1,10 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import SafeParkSite from "./SafeParkSite"; // make sure filename matches
-import "./index.css";
+import SafeParkSite from "./SafeParkSite";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <SafeParkSite />
-  </React.StrictMode>
-);
+function App() {
+  return <SafeParkSite />;
+}
+
+export default App;
